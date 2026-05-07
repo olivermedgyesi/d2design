@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx next *)",
+      "Read(//c/Users/Omedg/XTRA/Downloads/PNG-20260507T013138Z-3-001/PNG/**)",
+      "Read(//c/Users/Omedg/XTRA/Downloads/Pattern-20260507T013155Z-3-001/Pattern/**)",
+      "Read(//c/Users/Omedg/XTRA/Downloads/Photos_Mockups-20260507T013213Z-3-001/Photos_Mockups/**)"
+    ]
+  }
+}
