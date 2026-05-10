@@ -1,7 +1,27 @@
+import { CTA } from "@/components/CTA";
+import { Collection } from "@/components/Collection";
+import { Footer } from "@/components/Footer";
+import { Hero } from "@/components/Hero";
+import { Intro } from "@/components/Intro";
+import { Navbar } from "@/components/Navbar";
+import { Process } from "@/components/Process";
+import { Services } from "@/components/Services";
+import { Testimonials } from "@/components/Testimonials";
+
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* Homepage content goes here */}
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Intro />
+        <Services />
+        <Process />
+        <Testimonials />
+        <Collection />
+        <CTA />
+      </main>
+      <Footer />
+    </>
   );
 }
