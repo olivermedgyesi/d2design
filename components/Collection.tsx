@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Collection() {
   return (
-    <section id="collection" className="bg-ink text-paper">
+    <section id="collection" className="bg-evergreen text-paper">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:min-h-[680px]">
         <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[480px]">
           <Image
@@ -16,9 +16,6 @@ export function Collection() {
         </div>
 
         <div className="flex flex-col justify-center px-6 py-16 md:px-12 md:py-24 lg:px-20">
-          <p className="mb-6 text-xs font-medium uppercase tracking-[0.25em] text-terracotta">
-            2026
-          </p>
           <h2 className="font-display text-4xl leading-[1.1] text-paper md:text-5xl lg:text-6xl">
             The 2026 D2 Collection
           </h2>
