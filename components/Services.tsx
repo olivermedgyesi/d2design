@@ -66,7 +66,7 @@ export function Services() {
                   <span className="font-display text-3xl text-terracotta md:text-4xl">
                     {service.num}
                   </span>
-                  <h3 className="font-display text-2xl leading-[1.15] text-ink md:text-3xl">
+                  <h3 className="font-display text-3xl leading-[1.15] text-ink md:text-4xl">
                     {service.title}
                   </h3>
                 </div>
