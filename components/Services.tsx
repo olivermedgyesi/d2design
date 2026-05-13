@@ -8,6 +8,7 @@ const services = [
     body: "Calgary's older homes carry something worth preserving. We restore and renovate character properties with the care their original craftsmanship deserves, bringing them forward without erasing what makes them distinct. The trees in these neighbourhoods took 50 years to grow and the lot sizes don't exist in new developments. Some things you simply cannot buy new!",
     image: "/photos/kitchen-heritage.png",
     imageAlt: "Heritage kitchen renovation with grey-blue cabinets and marble island",
+    href: "/what-we-do/character-home-renovations",
   },
   {
     num: "02",
@@ -15,6 +16,7 @@ const services = [
     body: "From early design conversations to the final detail, one team carries your project through. We handle architecture, interiors, and construction together, so nothing gets lost between disciplines.",
     image: "/photos/architecture-terracotta.png",
     imageAlt: "Architectural composition with terracotta wall and black marble floor",
+    href: "/what-we-do/custom-new-home-design-build",
   },
   {
     num: "03",
@@ -22,6 +24,7 @@ const services = [
     body: "Precision where it matters most. We design and build kitchens and bathrooms that function exactly as they should and reflect considered, lasting choices in material and form.",
     image: "/photos/kitchen-vaulted.png",
     imageAlt: "Vaulted-ceiling kitchen with green island and exposed beams",
+    href: "/what-we-do/kitchen-and-bathroom-renovations",
   },
   {
     num: "04",
@@ -29,6 +32,7 @@ const services = [
     body: "Some spaces aren't meant to follow a standard. They're shaped by how you want to live, whether that's to focus, disconnect, recharge, or step into something entirely your own. From a quiet office or yoga studio to a private theatre, a personal retreat, or something more unexpected, each space is designed with intention.",
     image: "/photos/lounge-sculptural.jpg",
     imageAlt: "Sculptural lounge with marble stairs, bouclé chairs, and a glass coffee table",
+    href: "/what-we-do/you-spaces",
   },
 ];
 
@@ -47,10 +51,11 @@ export function Services() {
           {services.map((service, i) => {
             const isLeftCol = i % 2 === 0;
             return (
-              <article
+              <Link
                 key={service.num}
-                className={`border-t border-ink/15 py-12 md:py-16 ${
-                  isLeftCol ? "md:pr-12" : "md:border-l md:pl-12"
+                href={service.href}
+                className={`group block py-12 md:py-16 ${
+                  isLeftCol ? "md:pr-12" : "md:pl-12"
                 }`}
               >
                 <div className="relative mb-10 aspect-[4/3] w-full overflow-hidden md:mb-12">
@@ -59,28 +64,28 @@ export function Services() {
                     alt={service.imageAlt}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                 </div>
                 <div className="flex items-baseline gap-6">
                   <span className="font-display text-3xl text-terracotta md:text-4xl">
                     {service.num}
                   </span>
-                  <h3 className="font-display text-3xl leading-[1.15] text-ink md:text-4xl">
+                  <h3 className="font-display text-3xl leading-[1.15] text-ink transition-colors group-hover:text-terracotta md:text-4xl">
                     {service.title}
                   </h3>
                 </div>
                 <p className="mt-6 max-w-prose text-base leading-relaxed text-ink/75 md:text-lg">
                   {service.body}
                 </p>
-              </article>
+              </Link>
             );
           })}
         </div>
 
         <div className="mt-16 md:mt-20">
           <Link
-            href="#"
+            href="/what-we-do"
             className="group inline-flex text-xs font-medium uppercase tracking-[0.18em] text-ink"
           >
             <span className="border-b border-ink pb-1 transition-colors group-hover:border-terracotta group-hover:text-terracotta">
