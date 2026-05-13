@@ -1,5 +1,4 @@
 import { CTA } from "@/components/CTA";
-import { Collection } from "@/components/Collection";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Intro } from "@/components/Intro";
@@ -18,7 +17,6 @@ export default function Home() {
         <Services />
         <Process />
         <Testimonials />
-        <Collection />
         <CTA />
       </main>
       <Footer />
