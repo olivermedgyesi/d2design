@@ -8,7 +8,7 @@ const services = [
     body: "Calgary's older homes carry something newer builds simply don't. We bring out the potential in character properties without erasing what makes them worth having.",
     image: "/photos/kitchen-heritage.png",
     imageAlt: "Heritage kitchen renovation — placeholder",
-    href: "#",
+    href: "/what-we-do/character-home-renovations",
   },
   {
     num: "02",
@@ -16,7 +16,7 @@ const services = [
     body: "Selectively acquired character homes, renovated under full D2 creative control. Move-in ready, no renovation process required.",
     image: "/photos/lounge-walnut.jpg",
     imageAlt: "Walnut-paneled lounge — placeholder",
-    href: "#",
+    href: "/what-we-do/ready-to-move-designer-projects",
   },
   {
     num: "03",
@@ -24,7 +24,7 @@ const services = [
     body: "Every surface, every system, every room — approached as one cohesive project with a single design vision behind it.",
     image: "/photos/lounge-sculptural.jpg",
     imageAlt: "Sculptural lounge with marble stairs — placeholder",
-    href: "#",
+    href: "/what-we-do/complete-designer-renovations",
   },
   {
     num: "04",
@@ -32,7 +32,7 @@ const services = [
     body: "One team from concept to keys. Design, materials, trades, and construction handled together.",
     image: "/photos/architecture-terracotta.png",
     imageAlt: "Terracotta architectural composition — placeholder",
-    href: "#",
+    href: "/what-we-do/custom-new-home-design-build",
   },
   {
     num: "05",
@@ -40,7 +40,7 @@ const services = [
     body: "The rooms you use most deserve a real design process. Available as standalone work.",
     image: "/photos/kitchen-vaulted.png",
     imageAlt: "Vaulted-ceiling kitchen — placeholder",
-    href: "#",
+    href: "/what-we-do/kitchen-and-bathroom-renovations",
   },
   {
     num: "06",
@@ -48,7 +48,7 @@ const services = [
     body: "Home gyms, theatre rooms, man caves, zen rooms, home offices and more. Built around what you actually want to do in them.",
     image: "/photos/hero-kitchen.jpg",
     imageAlt: "Designed interior space — placeholder",
-    href: "#",
+    href: "/what-we-do/you-spaces",
   },
 ];
 
