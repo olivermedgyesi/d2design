@@ -9,7 +9,25 @@ const navLinks = [
   { label: "FAQ", href: "/faq" },
 ];
 
-export function Navbar() {
+type NavbarProps = {
+  variant?: "light" | "dark";
+};
+
+export function Navbar({ variant = "light" }: NavbarProps) {
+  const isDark = variant === "dark";
+
+  const logoSrc = isDark
+    ? "/brand/logo-secondary.png"
+    : "/brand/logo-secondary-white.png";
+
+  const linkClass = isDark
+    ? "text-sm font-medium text-ink transition-colors hover:text-ink/60"
+    : "text-sm font-medium text-white transition-colors hover:text-white/70";
+
+  const ctaClass = isDark
+    ? "inline-flex items-center border border-ink/70 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.15em] text-ink transition-colors hover:bg-ink hover:text-paper md:text-sm"
+    : "inline-flex items-center border border-white/70 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.15em] text-white transition-colors hover:bg-white hover:text-ink md:text-sm";
+
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-10 lg:px-14">
@@ -19,7 +37,7 @@ export function Navbar() {
           className="flex items-center"
         >
           <Image
-            src="/brand/logo-secondary-white.png"
+            src={logoSrc}
             alt="D2 Design Build"
             width={600}
             height={180}
@@ -33,20 +51,13 @@ export function Navbar() {
           className="hidden items-center gap-8 lg:gap-10 md:flex"
         >
           {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-white transition-colors hover:text-white/70"
-            >
+            <Link key={link.href} href={link.href} className={linkClass}>
               {link.label}
             </Link>
           ))}
         </nav>
 
-        <Link
-          href="/contact"
-          className="inline-flex items-center border border-white/70 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.15em] text-white transition-colors hover:bg-white hover:text-ink md:text-sm"
-        >
+        <Link href="/contact" className={ctaClass}>
           Book a Call
         </Link>
       </div>
