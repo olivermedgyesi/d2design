@@ -24,7 +24,7 @@ export function CTA() {
               thinking, and we&apos;ll let you know what&apos;s possible.
             </p>
             <Link
-              href="#"
+              href="/contact"
               className="mt-12 inline-flex items-center bg-paper px-8 py-4 text-xs font-medium uppercase tracking-[0.18em] text-ink transition-colors hover:bg-paper/85 md:text-sm"
             >
               Book Your Discovery Call

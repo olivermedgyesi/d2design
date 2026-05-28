@@ -64,7 +64,7 @@ export function Process() {
 
         <div className="mt-16 md:mt-20">
           <Link
-            href="#"
+            href="/process"
             className="group inline-flex text-xs font-medium uppercase tracking-[0.18em] text-paper"
           >
             <span className="border-b border-paper pb-1 transition-colors group-hover:border-terracotta group-hover:text-terracotta">
