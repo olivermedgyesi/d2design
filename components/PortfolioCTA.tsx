@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function CTA() {
+export function PortfolioCTA() {
   return (
     <section id="contact" className="relative overflow-hidden text-paper">
       <Image
@@ -17,17 +17,18 @@ export function CTA() {
         <div className="grid grid-cols-1 lg:grid-cols-12">
           <div className="lg:col-span-8">
             <h2 className="font-display text-4xl leading-[1.05] text-paper md:text-5xl lg:text-6xl">
-              Ready to Start?
+              Want to See the Work in Person?
             </h2>
             <p className="mt-8 max-w-xl text-base leading-[1.75] text-paper/80 md:text-lg">
-              Every project begins with a conversation. Tell us what you&apos;re
-              thinking, and we&apos;ll let you know what&apos;s possible.
+              D2 occasionally opens completed projects for walkthroughs
+              before or after listing. If you want to be notified when that
+              happens, get in touch.
             </p>
             <Link
               href="/contact"
               className="mt-12 inline-flex items-center bg-paper px-8 py-4 text-xs font-medium uppercase tracking-[0.18em] text-ink transition-colors hover:bg-paper/85 md:text-sm"
             >
-              Book Your Discovery Call
+              Contact Us
             </Link>
           </div>
         </div>

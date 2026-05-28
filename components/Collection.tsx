@@ -33,7 +33,7 @@ export function Collection() {
 
           <div className="mt-12">
             <Link
-              href="#"
+              href="/portfolio"
               className="group inline-flex text-xs font-medium uppercase tracking-[0.18em] text-paper"
             >
               <span className="border-b border-paper pb-1 transition-colors group-hover:border-terracotta group-hover:text-terracotta">

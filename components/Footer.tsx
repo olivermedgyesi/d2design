@@ -2,10 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = [
-  { label: "Work", href: "#work" },
-  { label: "Process", href: "#process" },
-  { label: "Collection", href: "#collection" },
-  { label: "Contact", href: "#contact" },
+  { label: "What We Do", href: "/what-we-do" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Process", href: "/process" },
+  { label: "About", href: "/about" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Footer() {
@@ -87,6 +89,7 @@ export function Footer() {
               Terms of Use
             </Link>
             <p>By Dracek &amp; Dhaliwal</p>
+            <p>Built by Matty Marketing.</p>
           </div>
         </div>
       </div>
