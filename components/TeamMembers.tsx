@@ -34,13 +34,6 @@ const members: Member[] = [
       "Outside of construction, I'm passionate about creativity, branding, film, and design, all of which influence how I approach projects and the experience we create for clients.",
     ],
   },
-  {
-    name: "Designer",
-    role: "To Be Announced",
-    image: "/photos/brandmark-embossed.png",
-    imageAlt: "Portrait placeholder — photo to come",
-    bio: ["The third member of the D2 team will be introduced here."],
-  },
 ];
 
 export function TeamMembers() {

@@ -87,6 +87,7 @@ export function Footer() {
               Terms of Use
             </Link>
             <p>By Dracek &amp; Dhaliwal</p>
+            <p>Built by Matty Marketing.</p>
           </div>
         </div>
       </div>
