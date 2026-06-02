@@ -19,6 +19,8 @@ type Project = {
   name: string;
   location: string;
   category: Exclude<Category, "All">;
+  // Optional kicker label shown on the card; defaults to the filter category.
+  label?: string;
   description: string;
   image: string;
   imageAlt: string;
@@ -33,9 +35,91 @@ const placeholderProject = {
   imageAlt: "Project photography placeholder",
 };
 
+// Custom Design Concepts — concept studies shown under the Designer Projects
+// filter. These are design concepts, not built projects.
+const customDesignConcepts: Project[] = [
+  {
+    name: "Layered Primary Bedroom",
+    location: "Concept Study",
+    category: "Designer Projects",
+    label: "Custom Design Concepts",
+    description:
+      "A warm primary suite built on natural materials. Walnut casegoods, a jute rug, and a woven gallery wall, grounded by soft terracotta accents.",
+    image: "/photos/concept-bedroom.png",
+    imageAlt:
+      "Concept rendering of a warm bedroom with a walnut wardrobe, woven storage bench, framed gallery wall, and terracotta headboard.",
+  },
+  {
+    name: "Spa-Inspired Ensuite",
+    location: "Concept Study",
+    category: "Designer Projects",
+    label: "Custom Design Concepts",
+    description:
+      "A calm ensuite pairing vertical wood slats and marble with dual vessel basins, a black-framed glass shower, and fine speckled floor tile.",
+    image: "/photos/concept-bathroom.png",
+    imageAlt:
+      "Concept rendering of an ensuite bathroom with wood-slat walls, a marble surround, dual vessel sinks, and a black-framed walk-in shower.",
+  },
+  {
+    name: "Garden Lounge & Bar",
+    location: "Concept Study",
+    category: "Designer Projects",
+    label: "Custom Design Concepts",
+    description:
+      "A sculptural lounge opening to the garden, with a curved sofa, a stone-topped bar, and floor-to-ceiling glazing that draws the planting indoors.",
+    image: "/photos/concept-bar.png",
+    imageAlt:
+      "Concept rendering of a lounge with a curved green sofa, a stone bar counter, brass pendant, and full-height windows onto a garden.",
+  },
+  {
+    name: "Arched Sitting Room",
+    location: "Concept Study",
+    category: "Designer Projects",
+    label: "Custom Design Concepts",
+    description:
+      "A quiet sitting room framed by a plaster archway, finished in deep evergreen with panelled walls and a marble fireplace.",
+    image: "/photos/concept-arch.png",
+    imageAlt:
+      "Concept rendering looking through a green archway into a deep-green panelled sitting room with a marble fireplace.",
+  },
+  {
+    name: "Double-Height Living Room",
+    location: "Concept Study",
+    category: "Designer Projects",
+    label: "Custom Design Concepts",
+    description:
+      "A double-height living room anchored by built-in shelving and an oversized abstract canvas, kept light with oak floors and a neutral palette.",
+    image: "/photos/concept-living-room.png",
+    imageAlt:
+      "Concept rendering of a double-height living room with built-in bookshelves, a large abstract painting, and a fireplace.",
+  },
+  {
+    name: "Open-Plan Library",
+    location: "Concept Study",
+    category: "Designer Projects",
+    label: "Custom Design Concepts",
+    description:
+      "An open-plan living library wrapped in full-height oak shelving, lit warmly and opening through to a sunlit garden beyond.",
+    image: "/photos/concept-library.png",
+    imageAlt:
+      "Concept rendering of an open-plan room with floor-to-ceiling oak bookshelves, a low sofa, and a doorway through to a garden.",
+  },
+  {
+    name: "Mid-Century Kitchen",
+    location: "Concept Study",
+    category: "Designer Projects",
+    label: "Custom Design Concepts",
+    description:
+      "A mid-century kitchen in walnut and terrazzo, with a hand-glazed geometric tile backsplash and full-height glazing onto the garden.",
+    image: "/photos/concept-kitchen.png",
+    imageAlt:
+      "Concept rendering of a walnut kitchen with a terrazzo island, geometric tile backsplash, sculptural wood pendant, and garden windows.",
+  },
+];
+
 const projects: Project[] = [
   { ...placeholderProject, category: "Character Home Renovations" },
-  { ...placeholderProject, category: "Designer Projects" },
+  ...customDesignConcepts,
   { ...placeholderProject, category: "Complete Renovations" },
   { ...placeholderProject, category: "Custom Builds" },
   { ...placeholderProject, category: "Kitchens + Bathrooms" },
@@ -107,7 +191,7 @@ export function PortfolioGrid() {
                 </div>
                 <div className="flex flex-1 flex-col pt-6 md:pt-8">
                   <div className="text-xs font-medium uppercase tracking-[0.18em] text-ink/60">
-                    {project.category}
+                    {project.label ?? project.category}
                   </div>
                   <h2 className="mt-3 font-display text-2xl leading-[1.15] text-ink md:text-3xl">
                     {project.name}
