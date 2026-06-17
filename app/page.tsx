@@ -5,7 +5,7 @@ import { Intro } from "@/components/Intro";
 import { Navbar } from "@/components/Navbar";
 import { Process } from "@/components/Process";
 import { Services } from "@/components/Services";
-import { Testimonials } from "@/components/Testimonials";
+// import { Testimonials } from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         <Intro />
         <Services />
         <Process />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <CTA />
       </main>
       <Footer />
