@@ -12,8 +12,8 @@ const members: Member[] = [
   {
     name: "Raj Dhaliwal",
     role: "Co-Founder",
-    image: "/photos/brandmark-embossed.png",
-    imageAlt: "Portrait placeholder — photo to come",
+    image: "/photos/team-raj-dhaliwal.png",
+    imageAlt: "Portrait of Raj Dhaliwal, Co-Founder of D2 Design Build",
     bio: [
       "I'm Raj Dhaliwal, co-founder of D2 Design Build. My background spans over 25 years in real estate, land analysis, market strategy, and business development — experience that gives me a uniquely grounded perspective on what makes a project viable, valuable, and worth doing right.",
       "I started my career as a residential and land appraiser, which sharpened my ability to read a property, understand its potential, and see what others often overlook. That foundation in valuation and feasibility has shaped how I approach every renovation — not just as a construction project, but as a meaningful investment in a home and the people living in it.",
@@ -25,8 +25,8 @@ const members: Member[] = [
   {
     name: "Christian Dracek",
     role: "Co-Founder",
-    image: "/photos/brandmark-embossed.png",
-    imageAlt: "Portrait placeholder — photo to come",
+    image: "/photos/team-christian-dracek.jpg",
+    imageAlt: "Portrait of Christian Dracek, Co-Founder of D2 Design Build",
     bio: [
       "I'm Christian Dracek, co-founder of D2 Design Build. My background is in construction, project execution, and problem solving, with a strong focus on creating spaces that feel intentional, functional, and built to last. I've always been drawn to the balance between craftsmanship and design, finding ways to combine technical execution with creative thinking to deliver projects that feel unique to each client.",
       "At D2, I take a hands-on role throughout the entire process, from planning and site coordination to construction and finishing details. I believe the best projects come from direct involvement, strong communication, and refusing to cut corners for the sake of speed or convenience.",
