@@ -1,6 +1,5 @@
 const channels = [
   { label: "Email", value: "info@D2design.ca", href: "mailto:info@D2design.ca" },
-  { label: "Phone", value: "—", href: null },
   { label: "Address", value: "Calgary, Alberta", href: null },
   { label: "Instagram", value: "@d2designbuild", href: "#" },
   { label: "Facebook", value: "D2 Design Build", href: "#" },
