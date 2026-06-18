@@ -14,8 +14,8 @@ const services = [
     num: "02",
     title: "Custom New Home Design + Build",
     body: "From early design conversations to the final detail, one team carries your project through. We handle architecture, interiors, and construction together, so nothing gets lost between disciplines.",
-    image: "/photos/architecture-terracotta.png",
-    imageAlt: "Architectural composition with terracotta wall and black marble floor",
+    image: "/photos/custom-new-home.jpg",
+    imageAlt: "Modern two-storey home with cantilevered roof, timber soffit, and floor-to-ceiling glazing against a blue sky",
     href: "/what-we-do/custom-new-home-design-build",
   },
   {
