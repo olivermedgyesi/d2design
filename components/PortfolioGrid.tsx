@@ -129,10 +129,11 @@ const projects: Project[] = [
 export function PortfolioGrid() {
   const [active, setActive] = useState<Category>("All");
 
-  const visible =
+  const visible = (
     active === "All"
       ? projects
-      : projects.filter((p) => p.category === active);
+      : projects.filter((p) => p.category === active)
+  ).filter((p) => p.name !== "Project Name TBA");
 
   return (
     <section className="bg-paper py-20 md:py-28 lg:py-32">
@@ -172,8 +173,8 @@ export function PortfolioGrid() {
 
         {visible.length === 0 ? (
           <div className="py-24 text-center md:py-32">
-            <p className="text-base leading-relaxed text-ink/60 md:text-lg">
-              No projects in this category yet. Check back soon.
+            <p className="font-display text-3xl text-ink md:text-4xl">
+              Projects Coming Soon
             </p>
           </div>
         ) : (

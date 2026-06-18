@@ -54,18 +54,10 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-paper/85">
               <li>
                 <a
-                  href="tel:5878797627"
+                  href="mailto:info@D2design.ca"
                   className="transition-colors hover:text-terracotta"
                 >
-                  587 879 7627
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:hello@d2designbuild.ca"
-                  className="transition-colors hover:text-terracotta"
-                >
-                  hello@d2designbuild.ca
+                  info@D2design.ca
                 </a>
               </li>
               <li className="text-paper/60">Calgary, Alberta</li>
