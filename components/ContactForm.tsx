@@ -129,6 +129,12 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!canProceed()) return;
+    // Only submit from the final step. On earlier steps (e.g. pressing Enter
+    // in a field) advance to the next step instead of submitting.
+    if (step < steps.length - 1) {
+      setStep((s) => Math.min(steps.length - 1, s + 1));
+      return;
+    }
     setSubmitting(true);
     setError(null);
 
