@@ -12,7 +12,7 @@ const members: Member[] = [
   {
     name: "Raj Dhaliwal",
     role: "Co-Founder",
-    image: "/photos/team-raj-dhaliwal.png",
+    image: "/photos/team-raj-dhaliwal.jpg",
     imageAlt: "Portrait of Raj Dhaliwal, Co-Founder of D2 Design Build",
     bio: [
       "I'm Raj Dhaliwal, co-founder of D2 Design Build. My background spans over 25 years in real estate, land analysis, market strategy, and business development — experience that gives me a uniquely grounded perspective on what makes a project viable, valuable, and worth doing right.",
